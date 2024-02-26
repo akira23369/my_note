@@ -50,6 +50,7 @@ git remote add origin <复制来的ssh>  origin是远程仓库名
 
 ```
 将本地代码推送到远程指定分支
+git push <远程主机名> <本地分支名>:<远程分支名>
 git push origin <指定的分支名> -f  // -f加上就是强制 -d可以删除远程分支
 git push origin dev:master  
 
