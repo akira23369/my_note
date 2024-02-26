@@ -74,3 +74,35 @@ git reset --hard HEAD^^：往上回滚两次，以此类推
 git reset --hard HEAD~100：往上回滚100个版本
 git reset --hard 版本号：回滚到某一特定版本
 ```
+
+
+
+```bash
+# 指定文件名：
+filename.txt
+
+# 指定文件夹：
+folder/
+
+
+# 使用通配符：不提交以 .a 结尾的所有文件
+*.a
+ 
+# 使用叹号 ! 来否定排除：在规定了不提交 .a 结尾的文件的时候，依然提交 lib.a 这个文件
+!lib.a
+
+# 使用斜杠 / 表示根目录：
+/build/      # 匹配根目录下的 build 文件夹
+ 
+# 忽略 TODO 的文件，不是忽略 TODO 的文件夹
+/TODO
+ 
+# 忽略 build 下面的所有文件
+build/
+ 
+# 忽略 doc 目录下的 *.txt 文件，如果是 doc 下边的子目录里有 *.txt 文件，这写文件不受这条规则的限制
+doc/*.txt
+ 
+# 忽略 doc 及其子目录下的所有 *.pdf 的文件
+doc/**/*.pdf
+```
