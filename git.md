@@ -76,7 +76,7 @@ git reset --hard 版本号：回滚到某一特定版本
 ```
 
 
-
+**使用.gitignore**
 ```bash
 # 指定文件名：
 filename.txt
